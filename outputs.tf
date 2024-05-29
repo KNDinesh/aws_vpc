@@ -6,5 +6,5 @@ output "vpc_cidr_block" {
 
 output "vpc_id" {
   description = "The VPC ID created by the vpc module"
-  value = var.vpc_id
+  value = aws_vpc.vpc.id
 }
